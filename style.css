@@ -1,0 +1,417 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-areas: "sidenav header"
+                            "sidenav content"
+                                "sidenav footer";
+
+    margin: 0 0 0 0;
+    background-color: rgb(165, 161, 161);
+}
+
+.sidenav{
+    grid-area: sidenav;
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+
+.header{
+    grid-area: header;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.content{
+    display: grid;
+    grid-area: content;
+    grid-template-columns: auto 440px;
+    grid-template-areas: "top top"
+                            "left right";
+
+    margin: 10 0 0 0;
+    background-color: rgb(165, 161, 161);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: white;
+}
+
+.avatar{
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.txt-sys{
+    font-size: 25px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+hr{
+    margin-top: -13px;
+}
+
+.menu{
+    width: 40px;
+    cursor: pointer;
+    height:40px;
+}
+
+.avatar2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mini-user{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 7px;
+    padding-right: 7px;
+    align-items: center;
+}
+
+.fj{
+    font-size: 17px;
+    color: white;
+    margin-top: -45px;
+    margin-left: 70px;
+}
+
+li{
+    color: rgb(22, 218, 15);
+    margin-top: -10px;
+    margin-left: 73px;
+    font-size: 14px;
+}
+
+.txt-menu{
+    margin-top: 25px;
+    font-size: 20px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.usuarios{
+    width: 30px;
+    margin-left: 18px;
+}
+
+.usuarios-txt{
+    color: white;
+    margin-top: -25px;
+    margin-left: 55px;
+}
+
+.complemento{
+    font-size: small;
+    color:white;
+}
+
+.foto-tabela{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.tabela0{
+    background-color: white;
+}
+
+th,td{
+    padding: 10px;
+    margin: 0px;
+}
+
+tbody>tr:nth-child(odd){
+   background-color: rgb(165, 161, 161);
+}
+
+caption {
+    background-color: white;
+    text-align: left;
+    font-size: 20px;
+    border-top: 3px solid grey;
+    padding-left: 5px;
+    
+}
+
+th{
+    padding: 20px;
+    text-align: left;
+}
+
+button{
+    background-color: rgb(177, 5, 40);
+    color: white;
+    width: 7vh;
+    height: 3vh;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkred;
+}
+
+table input{
+    background-color: rgba(0, 0, 182, 0.842);
+    color: white;
+    width: 7vh;
+    height: 3vh;
+    cursor: pointer;
+}
+
+input input:hover{
+    background-color: darkblue;
+}
+
+.home{
+    width: 20px;
+}
+
+.top{
+    grid-area: top;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.lado-esq{
+    grid-area: left;
+    padding-left: 20px;
+}
+
+.lado-dir{
+    grid-area: right;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.caixa1{
+    width: 180px;
+    background-color: darkblue;
+    color: white;
+    height: 100px;
+    border-radius: 5px;
+
+    z-index: 1;
+    position: relative;
+}
+.caixa1 img{
+    position: absolute;
+   width: 50%;
+   margin: 0;
+   z-index: 0;
+   top: 0%;
+   right: 0%;
+   opacity: 85%;
+}
+
+.caixa2{
+    width: 180px;
+    background-color:rgb(177, 5, 40) ;
+    color: white;
+    height: 100px;
+    border-radius: 5px;
+
+    z-index: 1;
+    position: relative;
+}
+.caixa2 img{
+   position: absolute;
+   width: 50%;
+   margin: 0;
+   z-index: 0;
+   top: 0%;
+   right: 0%;
+   opacity: 30%;
+}
+
+.caixas{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+#txt-caixa{
+    z-index: 1;
+    position: absolute;
+    font-size: 17px;
+}
+
+.retangulo{
+    padding-top: 31px;
+}
+
+form{
+    background-color: aliceblue;
+    width: 34vh;
+    padding: 3px;
+    border-top: 3px solid black;
+    border-radius: 5px;
+}
+
+legend{
+    font-size: 20px;
+}
+
+.form{
+    background-color: aliceblue;
+    width: 25vh;
+    height: 1vh;
+    padding: 5px;
+}
+
+.form:hover{
+    background-color: aliceblue;
+}
+
+.marcar{
+    width: 15px;
+}
+
+.date{
+    background-color: white;
+    color:black;
+    width: 25vh;
+}
+
+.date:hover{
+    background-color: white;
+}
+
+.sexo{
+    display: flex;
+    flex-direction: column;
+}
+
+.sexo *{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.pais{
+    height: 3vh;
+    width: 27vh;
+}
+
+#cor-form{
+    color: black;
+}
+
+.footer{
+    margin-top: 30px;
+}
+
+form button{
+    background-color:black;
+    border-radius: 2px;
+}
+
+
+@media screen and (max-width: 1340px){
+    th,td{
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas: "header"
+                            "content"
+                            "footer";
+    }
+
+    .sidenav{
+        display: none;
+    }
+
+    .content{
+        display: grid;
+        grid-area: content;
+        grid-template-columns: auto 440px;
+        grid-template-areas: "top top" 
+                            "left right";
+    
+        margin: 0 0 0 0;
+        background-color: rgb(165, 161, 161);
+    }
+    
+    .caixas{
+        padding: 10px;
+        max-width: 500px;
+    }
+
+    .retangulo{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+}
+
+@media screen and (max-width: 920px){
+    th,td{
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas: "header"
+                            "content"
+                            "footer";
+    }
+
+    .sidenav{
+        display: none;
+    }
+
+    .content{
+        display: grid;
+        grid-area: content;
+        grid-template-columns: 100%;
+        grid-template-areas: "top" "left" "right";
+    
+        margin: 0 0 0 0;
+        background-color: rgb(165, 161, 161);
+    }
+    
+    .caixas{
+        padding: 10px;
+        max-width: 500px;
+    }
+
+    .caixa1{
+        width: 200px;
+    }
+
+    .caixa2{
+        width: 200px;
+        
+    }
+
+    .tabela0{
+        max-width: 50px;
+    }
+
+    .txt-home{
+        padding-left: 100px;
+    }
+
+}

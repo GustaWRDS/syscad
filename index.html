@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SYSCAD</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="sidenav">
+            <p class="txt-sys">SYSCAD</p> <hr>
+
+            <img src="user.jpeg" class="avatar">
+
+            <p class="fj">Vini Júnior</p>
+            <p><li> Online </li></p>
+            <p class="txt-menu">Menu</p>
+
+            <img src="usuarios.jpg" class="usuarios">
+            <p class="usuarios-txt">Usuários</p>
+
+        </div>
+
+        <div class="header">
+            <img src="menu.png" class="menu">
+
+        <div class="mini-user">
+            <img src="user.jpeg" class="avatar2">
+            <p>Vini Júnior</p>
+        </div>
+    </div>
+
+        <div class="content">
+            <div class="top">
+                <h1>Usuários <span class="complemento">Gerenciamento de usuários do sistema</span></h1><br>
+                <p class="txt-home"><img src="home.png" class="home"> home > usuarios</p>
+        </div>
+
+        <div class="lado-esq"> 
+
+        <table class="tabela0">
+            <caption>
+                <strong> Lista de Usuários </strong>
+            </caption>
+
+            <thead>
+                <th>Foto</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Admin</th>
+                <th>Criado em</th>
+                <th>Acões</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img src="user.jpeg" class="foto-tabela"></td>
+                    <td>Daniel</td>
+                    <td>dan@gmail.com</td>
+                    <td>sim</td>
+                    <td>02/02/2018</td>
+                    <td>
+                        <input type="submit">
+                        <button>Excluir</button>
+                    </td>
+                 </tr>
+            
+             <tr>
+                <td><img src="user.jpeg" class="foto-tabela"></td>
+                <td>Daniel</td>
+                <td>dan@gmail.com</td>
+                <td>sim</td>
+                <td>02/02/2018</td>
+                <td>
+                    <input type="submit">
+                    <button>Excluir</button>
+                </td>
+             </tr>
+        
+             <tr>
+                <td><img src="user.jpeg" class="foto-tabela"></td>
+                <td>Daniel</td>
+                <td>dan@gmail.com</td>
+                <td>sim</td>
+                <td>02/02/2018</td>
+                <td>
+                    <input type="submit">
+                    <button>Excluir</button>
+                </td>
+             </tr>
+            </tbody>
+        </table>
+        </div>
+    
+
+    <div class="lado-dir">
+
+        <!-- CAIXAS / QUADRADOS -->
+    <div class="caixas">
+        <div class="caixa1">
+            <h3 id="num">44</h3>
+            <p id="txt-caixa">Novos Usuários</p>
+            <img src="user2.png" alt="">
+        </div>
+
+        <div class="caixa2">
+            <h3 id="num">15</h3>
+            <p id="txt-caixa">Administradores</p>
+            <img src="grafico3.png" >
+        </div>
+    </div>
+
+        <!-- FORMULÁRIO -->
+    <div class="retangulo">
+        <form>
+            <legend> <strong> Novo Usuário </strong></legend><br>
+            <hr>
+            <p><strong> Nome </strong> </p>
+    
+            <input type="text" id="cor-form" class="form" placeholder="Digite o nome do usuário" required><br>
+    <div class="sexo">
+            <p><strong> Gênero </strong> </p>
+    
+             <div> 
+                <input type="radio" class="marcar" required> Masculino <br>
+             </div>
+    
+             <div> 
+                <input type="radio" class="marcar" required> Feminino <br>
+             </div>
+    </div>
+
+            <p><strong> Data de nascimento </strong> </p>
+            <input type="date" class="date" required><br>
+    
+             <p><strong> País </strong> </p>
+           <select name="" class="pais" placeholder>
+
+            <option value="">
+                Selecione seu país
+            </option>
+
+            <option value=""> 
+                Brasil    
+            </option>
+
+            <option value=""> 
+                Inglaterra   
+            </option>
+
+            <option value=""> 
+                Espanha
+            </option>
+
+            <option value=""> 
+                Portugal   
+            </option>
+
+            <option value=""> 
+                Argentina    
+            </option>
+
+            <option value=""> 
+                França    
+            </option>
+            
+            <option value=""> 
+                Alemanha    
+            </option>
+
+        </select required>
+    
+            <p><strong> E-mail </strong> </p>
+            <input type="text" id="cor-form" class="form" placeholder="Digite o E-mail" required>
+    
+            <p><strong> Senha </strong> </p>
+            <input type="password" id="cor-form" class="form" placeholder="Digite sua senha" required><br><br>
+    
+            <strong> Foto </strong><br>
+            <input type="file"><br>
+    
+            <input type="checkbox" class="adm"> Administrador <br>
+    
+           <button>Salvar</button><br>
+        </form>
+    </div>
+    </div><br>
+        </div>
+
+        <div class="footer">
+            <p>Projeto desenvolvido por alunos do Curso Técnico de Informática da EEEP José de Barcelos.</p>
+        </div>
+
+    </div>
+</body>
+</html>
